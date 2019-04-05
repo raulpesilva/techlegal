@@ -10,16 +10,16 @@ export default class NavBar extends Component {
   render() {
     return (
       <Navigation>
-        <img src={logo} />
+        <img src={logo} alt="Logo TechLegal" />
         <ul>
           <li>
-            <Link> Home </Link>
+            <Link to="/"> Home </Link>
           </li>
           <li>
-            <Link> Palestrantes </Link>
+            <Link to="/"> Palestrantes </Link>
           </li>
           <li>
-            <Link> Contato </Link>
+            <Link to="/"> Contato </Link>
           </li>
         </ul>
       </Navigation>
