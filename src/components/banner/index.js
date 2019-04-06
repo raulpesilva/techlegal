@@ -24,6 +24,7 @@ export default class Banner extends Component {
           <DisplayInfo title="Data" content="08/04" />
           <DisplayInfo title="Horario" content="17:00" />
         </Display>
+        <Palestras />
       </BannerContainer>
     );
   }
