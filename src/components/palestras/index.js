@@ -6,7 +6,7 @@ export default class Palestras extends Component {
   render() {
     return (
       <ContainerPalestras>
-        <h1>Palestras:</h1>
+        <h1>Apresentações:</h1>
         <WrapPalestra>
           <strong> 17:00 </strong>
           <h2> ReactJS </h2>

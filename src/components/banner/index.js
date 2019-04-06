@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BannerContainer, Wrap, Display } from "./styles";
+import { BannerContainer, Wrap, Display, BoxPalestra } from "./styles";
 
 import DisplayInfo from "./../displayInfo";
 import Palestras from "./../palestras";
@@ -20,11 +20,13 @@ export default class Banner extends Component {
             conforto e, juntas, fazerem mais daquilo que curtem.
           </p>
         </Wrap>
-        <Display>
-          <DisplayInfo title="Data" content="08/04" />
-          <DisplayInfo title="Horario" content="17:00" />
-        </Display>
-        <Palestras />
+        <BoxPalestra>
+          <Display>
+            <DisplayInfo title="Data" content="08/04" />
+            <DisplayInfo title="Horário" content="17:00" />
+          </Display>
+          <Palestras />
+        </BoxPalestra>
       </BannerContainer>
     );
   }

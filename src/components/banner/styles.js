@@ -39,3 +39,10 @@ export const Display = styled.div`
   display: flex;
   max-width: 100%;
 `;
+
+export const BoxPalestra = styled.div`
+  transform: translateY(-10%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`;
