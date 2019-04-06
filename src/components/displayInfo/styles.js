@@ -5,10 +5,15 @@ export const Info = styled.section`
   height: 110px;
   background-color: #fff;
   border-radius: 10px;
-  h1{
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-35%);
+  margin: 5px;
+  h1 {
     font-size: 2em;
   }
-  strong{
-    fz
+  strong {
+    font-size: 2.5em;
+    font-weight: bold;
   }
 `;

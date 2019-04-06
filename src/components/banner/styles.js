@@ -4,17 +4,38 @@ import banner from "./../../img/banner.png";
 
 export const BannerContainer = styled.div`
   width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Wrap = styled.div`
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(${banner});
+  color: #fff;
+  position: relative;
+  align-items: center;
+
   div {
-    width: 100%;
-    height: 30%;
     display: flex;
-    justify-content: center;
-    background-image: url(${banner});
-    color: #fff;
-    position: relative;
-    strong {
-      font-size: 2em;
-      color: #333;
-    }
+    margin: 1em;
   }
+  strong {
+    font-size: 2em;
+    color: #333;
+    margin-left: 0.3em;
+  }
+  p {
+    width: 70%;
+    margin-bottom: 3em;
+  }
+`;
+
+export const Display = styled.div`
+  display: flex;
+  max-width: 100%;
 `;
