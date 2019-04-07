@@ -12,7 +12,8 @@ import {
   ModalButton,
   Conteudo,
   Wrap,
-  Modal
+  Modal,
+  ContentPalestrante
 } from "./styles";
 
 export default class Card extends Component {
@@ -62,20 +63,22 @@ export default class Card extends Component {
     );
 
     return (
-      <BoxCard>
+      <ContentPalestrante>
         {show ? modal() : ""}
-        <Container>
-          <Foto src={foto} alt={`Foto de ${nome}`} />
-          <Nome>{nome}</Nome>
-          <Wrap>
-            <Palestra>{palestra}</Palestra>
-            <Conteudo>{desc}</Conteudo>
-          </Wrap>
-          <ModalButton onClick={this.showModal}>
-            <i className="fas fa-user-graduate" />
-          </ModalButton>
-        </Container>
-      </BoxCard>
+        <BoxCard>
+          <Container>
+            <Foto src={foto} alt={`Foto de ${nome}`} />
+            <Nome>{nome}</Nome>
+            <Wrap>
+              <Palestra>{palestra}</Palestra>
+              <Conteudo>{desc}</Conteudo>
+            </Wrap>
+            <ModalButton onClick={this.showModal}>
+              <i className="fas fa-user-graduate" />
+            </ModalButton>
+          </Container>
+        </BoxCard>
+      </ContentPalestrante>
     );
   }
 }

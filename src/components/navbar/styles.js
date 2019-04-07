@@ -15,12 +15,21 @@ export const Navigation = styled.nav`
   ul {
     display: flex;
     list-style: none;
-    flex: 1;
+    width: 100%;
     justify-content: space-around;
     a {
       font-weight: bold;
       text-decoration: none;
       color: #fff;
+    }
+  }
+  @media (min-width: 700px) {
+    justify-content: center;
+    ul {
+      width: 30%;
+    }
+    img {
+      margin-right: 4em;
     }
   }
 `;

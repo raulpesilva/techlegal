@@ -45,4 +45,8 @@ export const BoxPalestra = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  @media (min-width: 700px) {
+    flex-direction: row;
+    transform: translateY(-20%);
+  }
 `;

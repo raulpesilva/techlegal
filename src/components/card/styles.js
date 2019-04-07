@@ -3,17 +3,32 @@ import styled from "styled-components";
 export const BoxCard = styled.div`
   display: flex;
   justify-content: center;
+
   margin-top: 60px;
   margin-bottom: 80px;
+  min-width: 33.33%;
+  width: 100%;
+  position: relative;
 `;
 export const BoxCardModal = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+
   margin-top: 60px;
   margin-bottom: 80px;
-  z-index: 2;
+  z-index: 50;
   position: absolute;
   width: 100%;
+
+  @media (min-width: 875px) {
+    min-width: 100%;
+  }
+`;
+
+export const ContentPalestrante = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 export const Container = styled.div`
@@ -26,6 +41,7 @@ export const Container = styled.div`
   width: 80%;
   padding-top: 50px;
   position: relative;
+  padding-bottom: 40px;
 `;
 
 export const Foto = styled.img`
@@ -51,6 +67,7 @@ export const Palestra = styled.h2`
 export const Conteudo = styled.p`
   font-size: 1.3em;
   padding-right: 1em;
+  margin-bottom: 40px;
 `;
 
 export const Modal = styled.div`
@@ -63,11 +80,12 @@ export const Modal = styled.div`
   left: 0;
 
   z-index: 1;
-  display: flex;
+  /* display: flex; */
 `;
 
-export const Curriculum = styled.p`
-  font-size: 1.3em;
+export const Curriculo = styled.div`
+  /* font-size: 1.3em; */
+  margin-bottom: 40px;
 `;
 export const ModalButton = styled.button`
   border-radius: 50px;
@@ -77,9 +95,12 @@ export const ModalButton = styled.button`
   background-color: #fff;
   min-width: 2em;
   min-height: 2em;
+  bottom: 0;
+  position: absolute;
   transform: translateY(30%);
   transition-duration: 0.2s;
   font-weight: bold;
+
   &:hover {
     cursor: pointer;
     color: #fff;

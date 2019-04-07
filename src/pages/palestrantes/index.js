@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Card from "./../../components/card";
 
+import { BoxPalestrantes } from "./styles";
+
 const graduacoesH = [
   {
     ano: 1988,
@@ -61,7 +63,7 @@ const descLongM = `Professora titular da UNICAMP desde outubro 2011 na área de 
 export default class Palestrantes extends Component {
   render() {
     return (
-      <div>
+      <BoxPalestrantes>
         <Card
           foto="https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2019/01/iStock-922757424-1080x675.jpg"
           nome="Cecília Mary Fischer Rubira"
@@ -81,12 +83,12 @@ export default class Palestrantes extends Component {
         <Card
           foto="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-j1kt8vldbi81uepo253j2hgs41-20180212150910.Medi.jpeg"
           nome="Maria Eduarda"
-          palestra="ReactJS"
+          palestra="Hotsite"
           descLong={descLongM}
           desc="Professora titular da UNICAMP desde outubro 2011 na área de Engenharia de Software, com Ph.D. in Computing Science pela Universidade de Newcastle Upon Tyne, Grã-Bretanha(1994)."
           formacoes={graduacoesM}
         />
-      </div>
+      </BoxPalestrantes>
     );
   }
 }
