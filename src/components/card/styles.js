@@ -3,8 +3,17 @@ import styled from "styled-components";
 export const BoxCard = styled.div`
   display: flex;
   justify-content: center;
-  position: relative;
-  margin-top: 80px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+`;
+export const BoxCardModal = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
 `;
 
 export const Container = styled.div`
@@ -42,7 +51,24 @@ export const Palestra = styled.h2`
 export const Conteudo = styled.p`
   font-size: 1.3em;
 `;
-export const Modal = styled.button`
+
+export const Modal = styled.div`
+  position: fixed;
+  background-color: #000;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+  display: flex;
+`;
+
+export const Curriculum = styled.p`
+  font-size: 1.3em;
+`;
+export const ModalButton = styled.button`
   border-radius: 50px;
   font-size: 1.3em;
   border: 1px solid #0099ff;
@@ -52,6 +78,7 @@ export const Modal = styled.button`
   min-height: 2em;
   transform: translateY(30%);
   transition-duration: 0.2s;
+  font-weight: bold;
   &:hover {
     cursor: pointer;
     color: #fff;
