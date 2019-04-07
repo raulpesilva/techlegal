@@ -34,7 +34,7 @@ export const Group = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: 640px) {
     flex-direction: row;
   }
 `;
