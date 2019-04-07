@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Curriculo from "./../curriculo";
+
 import {
   Container,
   Foto,
@@ -30,14 +32,13 @@ export default class Card extends Component {
       palestra: palestra,
       desc: desc
     });
-    // console.log("raul");
   };
   hideModal = event => {
     event.stopPropagation();
     this.setState({ show: false });
   };
   render() {
-    const { nome, foto, palestra, desc } = this.props;
+    const { nome, foto, palestra, desc, formacoes, descLong } = this.props;
     const { show } = this.state;
     const modal = () => (
       <div>
@@ -48,9 +49,10 @@ export default class Card extends Component {
             <Nome>{nome}</Nome>
             <Wrap>
               <Palestra>{palestra}</Palestra>
-              <Conteudo>{desc}</Conteudo>
+              <Conteudo>{descLong}</Conteudo>
             </Wrap>
-
+            <h1>Formações</h1>
+            <Curriculo formacoes={formacoes} />
             <ModalButton onClick={this.hideModal}>
               <i className="fas fa-times" />
             </ModalButton>

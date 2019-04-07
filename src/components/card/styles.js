@@ -50,6 +50,7 @@ export const Palestra = styled.h2`
 
 export const Conteudo = styled.p`
   font-size: 1.3em;
+  padding-right: 1em;
 `;
 
 export const Modal = styled.div`
