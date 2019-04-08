@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Input from "./../../components/input";
+import BannerContact from "./../../components/bannerContact";
 
 import { Redirect } from "react-router";
 
@@ -41,7 +42,8 @@ export default class Contato extends Component {
       <Container
         onSubmit={send ? this.handleSubmit : this.handleSubmitDisabled}
       >
-        <h1> Contato: </h1>
+        <BannerContact />
+
         <Input
           name="Nome:"
           type="nome"
