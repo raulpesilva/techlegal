@@ -23,9 +23,9 @@ export const ButtonContato = styled.button`
 `;
 
 export const ButtonContatoDisabled = styled.button`
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  color: #eee;
+  color: #ccc;
   background-color: #fff;
   padding: 1em;
   margin-top: 1em;
