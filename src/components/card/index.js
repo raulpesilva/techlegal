@@ -37,6 +37,14 @@ export default class Card extends Component {
   hideModal = event => {
     event.stopPropagation();
     this.setState({ show: false });
+    const card = event.target.parentNode.parentNode.parentNode.parentNode;
+    card.scrollIntoView();
+  };
+  hideModallateral = event => {
+    event.stopPropagation();
+    this.setState({ show: false });
+    const card = event.target.parentNode.parentNode;
+    card.scrollIntoView();
   };
   render() {
     const { nome, foto, palestra, desc, formacoes, descLong } = this.props;
@@ -44,7 +52,7 @@ export default class Card extends Component {
     const modal = () => (
       <div>
         <Modal onClick={this.hideModal} />
-        <BoxCardModal>
+        <BoxCardModal onClick={this.hideModallateral}>
           <Container>
             <Foto src={foto} />
             <Nome>{nome}</Nome>

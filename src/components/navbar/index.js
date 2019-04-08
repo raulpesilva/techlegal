@@ -7,10 +7,23 @@ import { Navigation } from "./styles";
 import logo from "./../../img/logo.png";
 
 export default class NavBar extends Component {
+  state = {
+    msg: null,
+    show: false
+  };
+
+  componentWillMount() {
+    this.setState({ msg: this.props });
+  }
+
   render() {
+    const { msg, show } = this.props;
+
     return (
       <Navigation>
-        <img src={logo} alt="Logo TechLegal" />
+        <Link to="/">
+          <img src={logo} alt="Logo TechLegal" />
+        </Link>
         <ul>
           <li>
             <Link to="/"> Home </Link>
@@ -19,9 +32,10 @@ export default class NavBar extends Component {
             <Link to="/Palestrantes"> Palestrantes </Link>
           </li>
           <li>
-            <Link to="/"> Contato </Link>
+            <Link to="/Contato"> Contato </Link>
           </li>
         </ul>
+        {show ? <span> {msg} </span> : ""}
       </Navigation>
     );
   }

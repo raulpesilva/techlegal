@@ -14,15 +14,14 @@ export const BoxCardModal = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  left: 0;
   margin-top: 60px;
   margin-bottom: 80px;
-  z-index: 50;
+  z-index: 51;
   position: absolute;
-  width: 100%;
 
   @media (min-width: 875px) {
-    min-width: 100%;
+    /* min-width: 100%; */
   }
 `;
 
