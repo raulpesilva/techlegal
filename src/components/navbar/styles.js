@@ -12,7 +12,8 @@ export const Navigation = styled.nav`
     background-color: #55efc4;
     color: #333;
     border-radius: 5px;
-    padding: 1em;
+    font-size: 1.2em;
+    padding: 0.8em;
     margin-top: 4em;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     z-index: 50;
