@@ -7,7 +7,6 @@ export default class BannerContact extends Component {
       <BannerContainer>
         <Wrap>
           <h1>Contato </h1>
-
           <strong> Preencha o formulário abaixo: </strong>
         </Wrap>
       </BannerContainer>

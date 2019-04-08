@@ -12,7 +12,7 @@ export const BannerContainer = styled.div`
 
 export const Wrap = styled.div`
   width: 100%;
-  height: 30%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
