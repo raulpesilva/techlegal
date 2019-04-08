@@ -32,6 +32,7 @@ export const Wrap = styled.div`
   p {
     width: 70%;
     margin-bottom: 3em;
+    max-width: 35em;
   }
 `;
 
